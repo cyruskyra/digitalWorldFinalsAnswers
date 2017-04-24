@@ -143,6 +143,18 @@ print countNumOpenLocker(2000)
 print countNumOpenLocker(10)
 print countNumOpenLocker(20)
 print countNumOpenLocker(1000000)
-print "I guess I'll try to find a pattern using the following even though my program can compute 1000000"
-for i in range(100):
-	print i,countNumOpenLocker(i)
+
+##### One-liner!
+
+import math
+
+def countNumOpenLockerOne(K):
+	return int(math.floor(math.sqrt(K)))
+
+print 'Question 7 One Liner'
+
+print countNumOpenLockerOne(6)
+print countNumOpenLockerOne(2000)
+print countNumOpenLockerOne(10)
+print countNumOpenLockerOne(20)
+print countNumOpenLockerOne(1000000)
