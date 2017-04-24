@@ -126,7 +126,7 @@ print '\n'
 def countNumOpenLocker(K):
 	lockerState = [False]*K
 	for i in xrange(1,K+1):
-		for j in xrange(0,len(lockerState),i):
+		for j in range(i-1,len(lockerState),i):
 			lockerState[j] = not lockerState[j]
 	
 	openCount = 0
